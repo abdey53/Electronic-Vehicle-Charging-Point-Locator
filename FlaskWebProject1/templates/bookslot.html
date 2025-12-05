@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../static/content/bookcss.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <h1>Electric Vehicle Charging Slot Booking</h1>
+    </header>
+
+    <section>
+        <div class="booking-form">
+            <h2>Book a Slot</h2>
+            <form method="POST">
+                <label for="vehicle_type">Vehicle Type:</label>
+                <select id="vehicle_type" name="vehicle_type">
+                    <option value="electric-car">Select Vehicle Type</option>
+                    <option value="Electric Car">Electric Car</option>
+                    <option value="Electric Bike">Electric Bike</option>
+                </select>
+
+                <label for="charging_station">Charging Station:</label>
+                <select id="charging_station" name="charging_station">
+                    <option value="electric-car">Select Charging Station</option>
+                    <option value="Bhawarkua, Indore">Bhawarkua, Indore</option>
+                    <option value="Palasia, Indore">Palasia, Indore</option>
+                    <option value="Bholaram Ustad, Indore">Bholaram Ustad, Indore</option>
+                </select>
+                <label for="rate_plans">Rates and Plans:</label>
+                <select id="rate_plans" name="rate_plans">
+                    <option value="electric-car">Select Charging Plans</option>
+                    <option value="Standard Plan">Standard Plan</option>
+                    <option value="Premium Plan">Premium Plan</option>
+                    <option value="Unlimited Plan">Unlimited Plan</option>
+                </select>
+
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required>
+
+
+                
+                    <div class="time-input-container">
+                        <label for="start">Start:</label>
+                        <input type="time" id="start" name="start">
+
+                        <label for="endd">End:</label>
+                        <input type="time" id="endd" name="endd">
+                    </div>
+
+               
+
+                    <a href="payment" class="button">Make Payment</a>
+            </form>
+        </div>
+    </section>
+</body>
+</html>

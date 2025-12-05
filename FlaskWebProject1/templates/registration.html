@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+<div class="container">
+    <div class="row" style="margin-top: 40px">
+        <div class="col-sm-6">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="email">Username : </label>
+                    <input type="text" name="name" class="form-control" id="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email : </label>
+                    <input type="email" name="email" class="form-control" id="email">
+                </div>
+                <div class="form-group">
+                    <label for="email">Password : </label>
+                    <input type="password" name="passcode" class="form-control" id="passcode">
+                </div>
+                <button type="submit" class="btn form-control btn-default">Register</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
+
+
+
